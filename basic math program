@@ -1,0 +1,94 @@
+// adding even number
+
+import java.util.*;
+public class Main
+{
+    public static void main (String[] args)
+    {
+    Scanner in = new Scanner(System.in);
+    int n = in.nextInt();
+    int rem;
+    int a = 0;
+    while(n>0)
+    {
+        rem =n%10;
+        if(rem%2==0)
+        {
+            a=a+rem;
+        }
+       n/=10; 
+    }
+    
+    {
+        System.out.print(a);
+    }
+    }}
+
+    // palindrome
+
+    import java.util.*;
+public class Main
+{
+    public static void main (String[] args)
+    {
+    Scanner in = new Scanner(System.in);
+    int n = in.nextInt();
+    int rem;
+    int a = 0;
+    int temp = n;
+    while(n>0)
+    {
+        rem =n%10;
+        a=a*10+rem;
+        n=n/10;
+    }
+    if (a==temp)
+    {
+        System.out.print("palindrome");
+    }
+    else
+    {
+        System.out.print("not a palindrome");
+    }
+    }}
+
+    //count digits
+
+    import java.util.*;
+public class Main
+{
+    public static void main (String[] args)
+    {
+    Scanner in = new Scanner(System.in);
+    long n = in.nextLong();
+    long a = 0;
+    while(n!=0)
+    {
+        n=n/10;
+        a++;
+    }
+    
+    
+    {
+        System.out.print(a);
+    }
+    }
+}
+
+//even no 1 - 10
+
+import java.util.*;
+public class Main
+{
+    public static void main (String[] args)
+    {
+    //Scanner in = new Scanner(System.in);
+    //int n = in.nextInt();
+    for (int i=1;i<=10;i++)
+    {
+        if(i%2==0)
+        {
+            System.out.print(i+" ");
+        }
+    }
+    }}

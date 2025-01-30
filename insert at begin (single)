@@ -1,0 +1,64 @@
+class Node
+{
+	int data;
+	Node next;
+	Node(int data)
+	{
+		this.data=data;
+		this.next=null;
+	}
+}
+class Linkedlist
+{
+	Node head,tail;
+	public void insert(int data)
+	{
+		Node newNode = new Node(data);
+		//newNode.next = head;
+		if(head==null)
+		{
+			head = newNode;
+			tail=newNode;
+		}
+		else
+		{
+			tail.next=newNode;
+			tail=newNode;
+		}
+	}
+	public void insertAtbegining(int data)
+	{
+	    Node newNode=new Node(data);
+	    newNode.next=head;
+	    head=newNode;
+	}
+	public void end(int data)
+	{
+	    Node newNode=new Node(data);
+	    tail.next=newNode;
+	    newNode.next=null;
+	}
+	public void display()
+	{
+		Node temp = head;
+		while(temp!=null)
+		{
+			System.out.println(temp.data);
+			temp=temp.next;
+		}
+	}
+}
+public class Main
+{
+	public static void main (String[] args)
+	{
+		Linkedlist link = new Linkedlist();
+		link.insert(100);
+		link.insert(200);
+		link.insert(300);
+		System.out.println("Insert at beginning :");
+		link.insertAtbegining(500);
+		link.end(700);
+		link.display();
+	}
+}

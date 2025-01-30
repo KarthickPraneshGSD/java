@@ -1,0 +1,8 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    String str1="hello";
+	    char ch=str1.charAt(0);
+		System.out.println("print the statement :"+ch);
+	}
+}

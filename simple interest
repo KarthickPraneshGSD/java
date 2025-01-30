@@ -1,0 +1,28 @@
+import java.util.*;
+class SI {
+	int principal;
+	int rate;
+	int time;
+	SI(int p,int r,int t) {
+		principal = p;
+		rate = r;
+		time = t;
+	}
+	int calculateInterest() {
+		return (principal * rate * time) / 100;
+	}
+}
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("principal amount: ");
+		int principal = sc.nextInt();
+		System.out.print("rate of interest: ");
+		int rate = sc.nextInt();
+		System.out.print("time : ");
+		int time = sc.nextInt();
+		SI si = new SI(principal, rate, time);
+		int interest = si.calculateInterest();
+		System.out.println("Simple Interest: " + interest);
+	}
+}

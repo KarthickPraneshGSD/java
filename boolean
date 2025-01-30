@@ -1,0 +1,21 @@
+// boolean
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String str1="helloworld";
+	    String str2="HELLOWORLD";
+		System.out.println("check whether it is equal or not (true / false) :"+str1.equals(str2));
+	}
+}
+
+//boolean 2
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String str1="helloworld";
+	    String str2="HELLOWORLD";
+		System.out.println("check whether it is equal or not (true / false) :"+str1.equalsIgnoreCase(str2));
+	}
+}

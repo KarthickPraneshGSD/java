@@ -1,0 +1,19 @@
+// index
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String str="helloworld";
+		System.out.println("index of :"+str.indexOf('w'));
+	}
+}
+
+// index 2
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String str="helloworld";
+		System.out.println("index of :"+str.lastIndexOf('o'));
+	}
+}

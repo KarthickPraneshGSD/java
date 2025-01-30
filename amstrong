@@ -1,0 +1,60 @@
+// amstrong number
+
+import java.util.*;
+public class Main
+{
+    public static void main (String[] args)
+    {
+    Scanner in = new Scanner(System.in);
+    int a = in.nextInt();
+    int rem=0;
+    int sum = 0;
+    int temp = a;
+    while(a>0)
+    {
+        rem =a%10;
+        int cube=rem;
+        cube=cube*cube*cube;
+        sum+=cube;
+        a/=10;
+    }
+    if(sum==temp) 
+    {
+        System.out.print("amstrong");
+    }
+    else{
+        System.out.print("not amstrong");
+    }
+    }}
+
+// strong number
+
+import java.util.*;
+public class Main
+{
+    public static void main (String[] args)
+    {
+    Scanner in = new Scanner(System.in);
+    int a = in.nextInt();
+    int rem=0;
+    int sum = 0;
+    int temp = a;
+    while(a>0)
+    {
+        rem =a%10;
+        int fact=1;
+        for(int i=1;i<=rem;i++)
+        {
+            fact=fact*i;
+        }
+        sum+=fact;
+        a/=10;
+    }
+    if(sum==temp) 
+    {
+        System.out.print("strong");
+    }
+    else{
+        System.out.print("not strong");
+    }
+    }}

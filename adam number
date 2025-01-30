@@ -1,0 +1,35 @@
+import java.util.*;
+public class Main
+{
+    public static void main (String[] args)
+    {
+    Scanner in = new Scanner(System.in);
+    int n=in.nextInt();
+    int sq=n*n;
+    System.out.print("sq:"+sq);
+    int s = 0;
+    while(sq>0)
+    {
+        int r =sq%10;
+        s =s*10+r;
+        sq/=10;
+    }
+        System.out.print("rev:"+s);
+        int sqrt=(int)Math.sqrt(s);
+        System.out.print("sqrt:"+sqrt);
+        int s1=0;
+        while(sqrt>0)
+        {
+            int r =sqrt%10;
+            s1=s1*10+r;
+        }
+        System.out.print("rev:"+s1);
+        if(s1==n)
+        {
+            System.out.print("adam number");
+        }
+        else{
+            System.out.print("not a adam number");
+        }
+    }}
+    

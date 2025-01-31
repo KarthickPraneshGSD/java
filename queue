@@ -1,0 +1,61 @@
+package list;
+class Helicoptor
+{
+	int a[]=new int[5];
+	int rear=-1;
+	int front=-1;
+	
+	public void enqueue(int data)
+	{
+		if(front == a.length-1 && rear==a.length-1)
+		{
+			System.out.println("the queue is overflows");
+		}
+		else
+		{
+			if(front==-1)
+			{
+				front=0;
+			}
+			rear++;
+			a[rear]=data;
+		}
+	}
+	public void dequeue()
+	{
+		if(front==-1)
+		{
+			System.out.println("the queue is underflow");
+		}
+		else
+		{
+			front++;
+		}
+	}
+	
+	public void display()
+	{
+		for(int i=front;i<=rear;i++)
+		{
+			System.out.println("the elements are:"+a[i]);
+			
+		}
+	}
+}
+public class queue
+{
+public static void main(String args[])
+{
+	Helicoptor s =new Helicoptor();
+	s.enqueue(10);
+	s.enqueue(20);
+	s.enqueue(30);
+	s.enqueue(40);
+	s.enqueue(50);
+	
+	s.dequeue();
+	
+	
+	s.display();
+}
+}

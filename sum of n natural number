@@ -1,0 +1,19 @@
+package demo;
+import java.util.*;
+public class sum_of_n {
+public static int Sum(int n)
+{
+	if(n<=1)
+	{
+		return n;
+	}
+	return n+Sum(n-1);
+}
+	public static void main(String[] args) {
+			Scanner s=new Scanner(System.in);
+			System.out.println("Enter down a Number :");
+			int number=s.nextInt();
+			System.out.println(Sum(number));
+	}
+
+}
